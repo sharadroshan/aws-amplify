@@ -11,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <AuthenticatorWithEmail />
+      <h1>Wellcome</h1>
     </div>
   );
 }
