@@ -3,15 +3,15 @@ import { Amplify } from 'aws-amplify';
 import awsconfig from './aws-exports';
 import { withAuthenticator } from '@aws-amplify/ui-react';
 import AuthenticatorWithEmail from './EmployeeDetail/AuthenticatorWithEmail'
-
+import Header from './EmployeeDetail/Header';
 
 Amplify.configure(awsconfig);
 
 function App() {
   return (
     <div className="App">
+      <Header />
       <AuthenticatorWithEmail />
-      <h1>Wellcome</h1>
     </div>
   );
 }
