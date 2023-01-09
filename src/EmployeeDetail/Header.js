@@ -1,5 +1,6 @@
 import React from 'react'
-import { View, Image,useTheme } from '@aws-amplify/ui-react';
+import { View, Image, useTheme } from '@aws-amplify/ui-react';
+
 
 export default function Header() {
     const { tokens } = useTheme();

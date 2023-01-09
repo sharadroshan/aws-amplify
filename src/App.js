@@ -4,6 +4,8 @@ import awsconfig from './aws-exports';
 import { withAuthenticator } from '@aws-amplify/ui-react';
 import AuthenticatorWithEmail from './EmployeeDetail/AuthenticatorWithEmail'
 import Header from './EmployeeDetail/Header';
+import Footer from './EmployeeDetail/Footer';
+
 
 Amplify.configure(awsconfig);
 
@@ -12,6 +14,7 @@ function App() {
     <div className="App">
       <Header />
       <AuthenticatorWithEmail />
+      <Footer />
     </div>
   );
 }
