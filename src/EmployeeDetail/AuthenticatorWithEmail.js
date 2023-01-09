@@ -27,13 +27,6 @@ export default function AuthenticatorWithEmail() {
             <h1>Hello </h1>
             <Authenticator services={services} initialState="signUp">
                 {({ signOut }) => <button onClick={signOut}>Sign out</button>}
-                <amplify-text-field
-                    label="Icecream"
-                    autocomplete="false"
-                    placeholder="Your Icecream"
-                    name="custom:icecream"
-                    type="text">
-                </amplify-text-field>
             </Authenticator>
         </div>
     );
