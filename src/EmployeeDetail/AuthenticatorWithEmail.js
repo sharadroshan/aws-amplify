@@ -1,6 +1,6 @@
 import React from 'react';
 import { Amplify, Auth } from 'aws-amplify';
-import { Authenticator, SwitchField } from '@aws-amplify/ui-react';
+import { Authenticator, MenuItem, Menu } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
 export default function AuthenticatorWithEmail() {
@@ -22,10 +22,17 @@ export default function AuthenticatorWithEmail() {
     };
     return (
         <div>
-            <h1>Hello</h1>
-            <Authenticator services={services} initialState="signUp">
-                {({ signOut }) => <SwitchField variant='contained' onClick={signOut}></SwitchField>}
-            </Authenticator>
+            <Menu
+                menuAlign="end"
+                backgroundColor='skyblue'
+            >
+                <Authenticator services={services} initialState="signUp">
+                    {({ signOut }) =>
+                        <MenuItem onClick={signOut}>
+                            Log Out
+                        </MenuItem>}
+                </Authenticator>
+            </Menu>
         </div>
     );
 }
