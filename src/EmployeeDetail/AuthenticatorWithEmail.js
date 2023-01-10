@@ -37,7 +37,7 @@ export default function AuthenticatorWithEmail() {
                 </Authenticator>
             </Menu>
             <Image alt="Amplify logo"
-                src="https://thumbs.dreamstime.com/b/laptop-header-image-good-morning-top-view-retro-breakfast-hero-old-wooden-desk-70599728.jpg    "
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGI59GVZs7QFsB3fSqzDZHh8RZv0X2PvN35w&usqp=CAU"
                 height="400px"
                 width="100%"
             >
