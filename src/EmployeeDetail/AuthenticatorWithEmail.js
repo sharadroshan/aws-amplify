@@ -21,15 +21,13 @@ export default function AuthenticatorWithEmail() {
         },
     };
 
-    const theme = {
-        backgroundColor: 'skyblue'
-    }
+
     return (
         <div>
             <Menu
                 menuAlign="end"
                 size='large'
-                theme={theme}
+                backgroundColor={{ base: 'green' }}
             >
                 <Authenticator services={services} initialState="signUp">
                     {({ signOut }) =>
@@ -39,7 +37,7 @@ export default function AuthenticatorWithEmail() {
                 </Authenticator>
             </Menu>
             <Image alt="Amplify logo"
-                src="https://cdn-images.zety.com/pages/resume_headings.jpg"
+                src="https://thumbs.dreamstime.com/b/laptop-header-image-good-morning-top-view-retro-breakfast-hero-old-wooden-desk-70599728.jpg    "
                 height="400px"
                 width="100%"
             >
