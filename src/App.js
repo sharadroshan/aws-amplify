@@ -3,14 +3,14 @@ import { Amplify } from 'aws-amplify';
 import awsconfig from './aws-exports';
 import { withAuthenticator } from '@aws-amplify/ui-react';
 import AuthenticatorWithEmail from './EmployeeDetail/AuthenticatorWithEmail'
-import appBar from './EmployeeDetail/appBar';
+import MenuButton from './EmployeeDetail/MenuButton';
 
 Amplify.configure(awsconfig);
 
 function App() {
   return (
     <div>
-      <appBar />
+      <MenuButton />
       <AuthenticatorWithEmail />
     </div>
   );
