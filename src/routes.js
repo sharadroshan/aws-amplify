@@ -1,9 +1,9 @@
 import { Navigate } from 'react-router-dom';
 import { Layout } from './Components/layout'
 import DashBoard from './Components/DashBoard/DashBoard';
-import Typography from './Components/Typography/Typography';
 import Home from './Components/Home/Home'
 import Detail from './Components/Detail/Detail';
+import FileUploader from './Components/File Uploader/FileUploader';
 
 export const routes = [
     {
@@ -27,8 +27,8 @@ export const routes = [
                 element: <Detail />
             },
             {
-                path: 'typography',
-                element: <Typography />
+                path: 'file-uploader',
+                element: <FileUploader />
             }
         ]
     }

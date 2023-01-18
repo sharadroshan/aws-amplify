@@ -22,9 +22,9 @@ const items = [
     label: 'Detail'
   },
   {
-    href: '/typography',
+    href: '/file-uploader',
     icon: DocumentTextIcon,
-    label: 'Typography'
+    label: 'File Upload'
   }
 ];
 
