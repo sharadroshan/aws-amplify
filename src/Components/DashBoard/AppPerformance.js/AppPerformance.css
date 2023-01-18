@@ -1,0 +1,32 @@
+.app-performace-dott-yellow {
+    width: 8px;
+    height: 8px;
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+    background-color: #FFC260;
+}
+
+.app-performace-dott-blue {
+    width: 8px;
+    height: 8px;
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+    background-color: #536DFE;
+
+}
+.app-performace-dott-pink {
+    width: 8px;
+    height: 8px;
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+    background-color: #FF5C93;
+
+}
+.app-performace-dott-green {
+    width: 8px;
+    height: 8px;
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+    background-color: #3CD4A0;
+
+}

@@ -1,7 +1,8 @@
-import React from 'react';
-import { Amplify, Auth } from 'aws-amplify';
-import { Authenticator, MenuItem, Menu, Image } from '@aws-amplify/ui-react';
+import * as React from 'react';
+import { Auth } from 'aws-amplify';
+import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
+import { Avatar, Box } from '@mui/material';
 
 export default function AuthenticatorWithEmail() {
     const services = {
@@ -20,28 +21,17 @@ export default function AuthenticatorWithEmail() {
             });
         },
     };
-
-
     return (
-        <div>
-            <Menu
-                menuAlign="end"
-                size='large'
-                backgroundColor={{ base: 'green' }}
-            >
+        <div >
+            <Box>
                 <Authenticator services={services} initialState="signUp">
-                    {({ signOut }) =>
-                        <MenuItem onClick={signOut}>
-                            Log Out
-                        </MenuItem>}
+                    {({ signOut }) => <Avatar onClick={signOut} alt='User' sx={{cursor:'pointer'}} src='/static/images/avatar/2.jpg' ></Avatar>}
                 </Authenticator>
-            </Menu>
-            <Image alt="Amplify logo"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGI59GVZs7QFsB3fSqzDZHh8RZv0X2PvN35w&usqp=CAU"
-                height="400px"
-                width="100%"
-            >
-            </Image>
+            </Box>
         </div>
     );
 }
+
+
+
+
