@@ -23,7 +23,7 @@ export default function AuthenticatorWithEmail() {
     };
     return (
         <div >
-            <Box>
+            <Box> 
                 <Authenticator services={services} initialState="signUp">
                     {({ signOut }) => <Avatar onClick={signOut} alt='User' sx={{cursor:'pointer'}} src='/static/images/avatar/2.jpg' ></Avatar>}
                 </Authenticator>
