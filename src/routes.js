@@ -3,7 +3,7 @@ import { Layout } from './Components/layout'
 import DashBoard from './Components/DashBoard/DashBoard';
 import Home from './Components/Home/Home'
 import Detail from './Components/Detail/Detail';
-import FileUploader from './Components/File Uploader/FileUploader';
+import File from './Components/File/File'
 
 export const routes = [
     {
@@ -27,8 +27,8 @@ export const routes = [
                 element: <Detail />
             },
             {
-                path: 'file-uploader',
-                element: <FileUploader />
+                path: 'file',
+                element: <File />
             }
         ]
     }

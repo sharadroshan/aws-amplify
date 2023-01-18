@@ -22,7 +22,7 @@ const items = [
     label: 'Detail'
   },
   {
-    href: '/file-uploader',
+    href: '/file',
     icon: DocumentTextIcon,
     label: 'File Upload'
   }
