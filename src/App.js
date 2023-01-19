@@ -8,6 +8,7 @@ import { theme } from './theme';
 import { CssBaseline, ThemeProvider } from '@mui/material'
 import { useRoutes } from 'react-router-dom';
 
+
 Amplify.configure(awsconfig);
 
 function App() {
