@@ -24,7 +24,7 @@ const items = [
   {
     href: '/file',
     icon: DocumentTextIcon,
-    label: 'File Upload'
+    label: 'File'
   }
 ];
 
